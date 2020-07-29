@@ -1,0 +1,46 @@
+.city-card {
+  display: flex;
+  margin-bottom: 10px;
+  border: 2px solid;
+  width: 100%;
+  height:200px;
+  padding: 25px;
+  box-sizing: border-box;
+
+  .reorder-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+    div {
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .city-name-container {
+      flex: 1;
+    }
+
+    .current-weather-container {
+      flex: 3;
+    }
+  }
+
+  .historical-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+  }
+
+  .remove-btn {
+    cursor: pointer
+  }
+}
